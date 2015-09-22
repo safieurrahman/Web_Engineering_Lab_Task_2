@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title> Image Browser </title>
+    <style>
+        .tab div {
+        display: none;
+        } 
+        
+        .tab div:target {
+        display: block;
+        }
+    </style>
+</head>
+
+<body style = "text-align:center; background-color: black">
+    
+    <h1 style = " text-family:Verdana; color:white"> Image Gallery </h1>h1>
+    <p style = "color:white"> Press any image to start browsing!</p>
+        
+        
+        
+<div class="tab">
+
+    <a href="#img1"><img src="Images/1.jpg" width="180px"></a>   
+    <a href="#img2"><img src="Images/2.jpg" width="180px"></a>
+    <a href="#img3"><img src="Images/3.jpg" width="180px"></a>
+    <a href="#img4"><img src="Images/4.jpg" width="180px"></a>
+    <a href="#img5"><img src="Images/5.jpg" width="180px"></a>
+                
+    <div id="img1">
+        <figure>
+            <img src="Images/1.jpg" width= "50%">
+        </figure>
+        <a href="#img5"><button>Previous</button></a>
+	    <a href="#img2"><button>Next</button></a>
+    </div>
+        
+    <div id="img2">
+        <figure>
+            <img src="Images/2.jpg" width= "50%">
+        </figure>
+        <a href="#img1"><button>Previous</button></a>
+	    <a href="#img3"><button>Next</button></a>
+    </div>
+        
+    <div id="img3">
+        <figure>
+            <img src="Images/3.jpg" width= "50%">
+        </figure>
+        <a href="#img2"><button>Previous</button></a>
+	    <a href="#img4"><button>Next</button></a>
+    </div>
+        
+    <div id="img4">
+        <figure>
+            <img src="Images/4.jpg" width= "50%">
+        </figure>
+        <a href="#img3"><button>Previous</button></a>
+	    <a href="#img5"><button>Next</button></a>
+    </div>
+        
+    <div id="img5">
+        <figure>
+            <img src="Images/5.jpg" width= "50%">
+        </figure>
+        <a href="#img4"><button>Previous</button></a>
+	    <a href="#img1"><button>Next</button></a>
+    </div>
+    
+</div>
+        
+</body>
